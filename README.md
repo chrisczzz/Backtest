@@ -7,4 +7,4 @@ A simple backtest system to how long/short volatility with hedging performs for 
     port at localhost;
     
   - Option Hedging Toolkit: Various pricing functions for back testing purposes. Eg. BSM option pricing, option greeks calculations.
-  - Option Hedging Backtest: Main file that simulates trading strategies and provide related metrics and graphs. Cumulative PNL, PNL distribution and so on.
+  - Option Hedging Backtest: Main file that simulates trading strategies and provides related metrics and graphs. Eg. Cumulative PNL, PNL distribution and so on.
