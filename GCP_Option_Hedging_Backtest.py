@@ -1,7 +1,7 @@
 from GCP_Option_Hedging_Toolkit import *
 import xmlrpc.client
 '''Strategy is to hold the position for a certain number of days. In case the exit day falls on a weekend,
- function will return the closet on which position will be disposed.'''
+ function will return the cloest on which position will be disposed.'''
 def set_params():
     '''Parameters to play with for different trading/hedging thresholds'''
     global stratcode,expcode,trade_gen_func,trading_entry_threshold,contract_expiry_days,trade_close_period,raw_data_file,atm_vol_file,foreign_notional,bt_start_date,bt_end_date,volsprd,undsprd,delta_hedging_threshold_long,delta_hedging_threshold_short,logfolder,log_path,vol_surface_server_add
@@ -132,6 +132,7 @@ def simulate_delta_and_vol(df,exp):
     df['implied_vol_put'] = np.array(implied_vol_put)
     df['option_delta'] = df['call_delta']  + df['put_delta']
     return df
+   
 if __name__ == '__main__':
     warnings.filterwarnings('ignore')
     '''Step 0. Loading params from batch file'''
